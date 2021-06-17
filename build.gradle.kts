@@ -12,6 +12,10 @@ group = "org.lucidant"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_16
 
+configurations {
+    testImplementation { exclude(group = "org.junit.vintage") }
+}
+
 repositories {
     mavenCentral()
 }
