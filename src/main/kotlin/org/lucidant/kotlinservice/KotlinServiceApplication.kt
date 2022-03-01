@@ -1,5 +1,6 @@
 package org.lucidant.kotlinservice
 
+import org.springframework.boot.Banner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class KotlinServiceApplication
 
 fun main(args: Array<String>) {
-    runApplication<KotlinServiceApplication>(*args)
+    runApplication<KotlinServiceApplication>(*args) {
+        setBannerMode(Banner.Mode.OFF)
+    }
 }
