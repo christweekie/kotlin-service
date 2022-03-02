@@ -1,5 +1,12 @@
 package org.lucidant.kotlinservice.controller
 
+import io.swagger.v3.oas.annotations.Operation
+import io.swagger.v3.oas.annotations.media.ArraySchema
+import io.swagger.v3.oas.annotations.media.Content
+import io.swagger.v3.oas.annotations.media.Schema
+import io.swagger.v3.oas.annotations.responses.ApiResponse
+import io.swagger.v3.oas.annotations.responses.ApiResponses
+import org.lucidant.kotlinservice.model.jpa.Article
 import org.lucidant.kotlinservice.repo.ArticleRepository
 import org.lucidant.kotlinservice.repo.UserRepository
 import org.springframework.http.HttpStatus
@@ -16,6 +23,14 @@ class ArticleController(private val repository: ArticleRepository) {
     @GetMapping("/")
     fun findAll() = repository.findAllByOrderByAddedAtDesc()
 
+    @Operation(summary = "Get all articles")
+    @ApiResponses(value = [
+        ApiResponse(responseCode = "200", description = "Found articles", content = [
+            (Content(mediaType = "application/json", array = (
+                    ArraySchema(schema = Schema(implementation = Article::class)))))]),
+        ApiResponse(responseCode = "400", description = "Bad request", content = [Content()]),
+        ApiResponse(responseCode = "404", description = "Did not find any articles", content = [Content()])]
+    )
     @GetMapping("/{slug}")
     fun findOne(@PathVariable slug: String) =
         repository.findBySlug(slug) ?: throw ResponseStatusException(HttpStatus.NOT_FOUND, "This article does not exist " )
