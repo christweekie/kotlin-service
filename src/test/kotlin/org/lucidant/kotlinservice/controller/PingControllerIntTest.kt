@@ -19,6 +19,6 @@ class PingControllerIntTest : IntegrationTestBase() {
           bytes = it
         )
       }
-    assertThat(str).isEqualTo("pong")
+    assertThat(str).isEqualTo("pong sample title")
   }
 }
