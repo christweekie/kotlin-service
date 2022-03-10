@@ -14,7 +14,8 @@ import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 
-@WebMvcTest
+// Use the controllers field or else it wants to test all controllers and without the full app context loading, some will fail to be created
+@WebMvcTest(controllers = [ArticleController::class, UserController::class])
 class RestControllersTest(@Autowired val mockMvc: MockMvc) {
 
     @MockkBean
