@@ -26,6 +26,7 @@ Java 16
 4. Controller with mustache template - test with `TestRestTemplate`
 5. REST controller - test with MockMvc
 6. Swagger
+7. WebMvcTest - lightweight test on controller with MockMvc
 
 
 ## Todo
