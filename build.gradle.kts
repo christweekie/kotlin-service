@@ -38,7 +38,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    implementation ("org.springframework.data:spring-data-relational:2.3.1")
+    implementation ("org.springframework.data:spring-data-relational:2.3.2")
 
     // OpenAPI with nice swagger UI
     implementation("io.springfox:springfox-swagger2:3.0.0")
