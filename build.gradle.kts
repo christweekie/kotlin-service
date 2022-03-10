@@ -9,7 +9,7 @@ plugins {
     // For classes such as JPA, makes non-final (kotlin final by default)
     kotlin("plugin.allopen") version "1.6.10"
 
-    kotlin("kapt") version "1.4.32"
+    kotlin("kapt") version "1.6.10"
 }
 
 group = "org.lucidant"
@@ -52,7 +52,7 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
-    testImplementation("com.ninja-squad:springmockk:3.1.0")
+    testImplementation("com.ninja-squad:springmockk:3.1.1")
 }
 
 tasks.withType<KotlinCompile> {
