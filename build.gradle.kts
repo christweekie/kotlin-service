@@ -9,7 +9,7 @@ plugins {
     // For classes such as JPA, makes non-final (kotlin final by default)
     kotlin("plugin.allopen") version "1.6.21"
 
-    kotlin("kapt") version "1.6.21"
+    kotlin("kapt") version "1.7.10"
 }
 
 group = "org.lucidant"
@@ -36,7 +36,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    implementation ("org.springframework.data:spring-data-relational:2.3.4")
+    implementation ("org.springframework.data:spring-data-relational:2.4.2")
 
     // OpenAPI with nice swagger UI
     implementation("io.springfox:springfox-swagger2:3.0.0")
