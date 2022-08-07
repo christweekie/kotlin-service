@@ -2,14 +2,14 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.springframework.boot") version "2.6.7"
-    id("io.spring.dependency-management") version "1.0.11.RELEASE"
+    id("io.spring.dependency-management") version "1.0.12.RELEASE"
     kotlin("jvm") version "1.6.21"
-    kotlin("plugin.spring") version "1.6.21"
+    kotlin("plugin.spring") version "1.7.10"
     kotlin("plugin.jpa") version "1.6.21"
     // For classes such as JPA, makes non-final (kotlin final by default)
     kotlin("plugin.allopen") version "1.6.21"
 
-    kotlin("kapt") version "1.6.21"
+    kotlin("kapt") version "1.7.10"
 }
 
 group = "org.lucidant"
@@ -40,7 +40,7 @@ dependencies {
 
     // OpenAPI with nice swagger UI
     implementation("io.springfox:springfox-swagger2:3.0.0")
-    runtimeOnly("org.springdoc:springdoc-openapi-ui:1.6.6")
+    runtimeOnly("org.springdoc:springdoc-openapi-ui:1.6.9")
     runtimeOnly("io.springfox:springfox-swagger-ui:3.0.0")
 
     // Database
