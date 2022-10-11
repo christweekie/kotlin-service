@@ -9,7 +9,7 @@ plugins {
     // For classes such as JPA, makes non-final (kotlin final by default)
     kotlin("plugin.allopen") version "1.7.10"
 
-    kotlin("kapt") version "1.7.10"
+    kotlin("kapt") version "1.7.20"
 }
 
 group = "org.lucidant"
