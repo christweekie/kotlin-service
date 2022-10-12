@@ -8,6 +8,10 @@ spring:
     name: sa
     password:
 
+  jpa:
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
 sample:
   title: sample title
 
