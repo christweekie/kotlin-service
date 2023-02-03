@@ -1,7 +1,7 @@
 # kotlin-service
 
 ## Requirements 
-Java 16
+Java 18
 
 ## How to run
 `./gradlew bootRun`
