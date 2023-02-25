@@ -4,17 +4,17 @@ plugins {
     id("org.springframework.boot") version "3.0.2"
     id("io.spring.dependency-management") version "1.1.0"
     kotlin("jvm") version "1.8.10"
-    kotlin("plugin.spring") version "1.7.21"
+    kotlin("plugin.spring") version "1.8.10"
     kotlin("plugin.jpa") version "1.8.10"
     // For classes such as JPA, makes non-final (kotlin final by default)
-    kotlin("plugin.allopen") version "1.7.21"
+    kotlin("plugin.allopen") version "1.8.10"
 
-    kotlin("kapt") version "1.7.21"
+    kotlin("kapt") version "1.8.10"
 }
 
 group = "org.lucidant"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_18
+java.sourceCompatibility = JavaVersion.VERSION_19
 
 configurations {
     testImplementation { exclude(group = "org.junit.vintage") }
@@ -50,13 +50,13 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
-    testImplementation("com.ninja-squad:springmockk:3.1.1")
+    testImplementation("com.ninja-squad:springmockk:4.0.0")
 }
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "18"
+        jvmTarget = "19"
     }
 }
 
