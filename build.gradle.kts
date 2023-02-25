@@ -14,7 +14,7 @@ plugins {
 
 group = "org.lucidant"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_16
+java.sourceCompatibility = JavaVersion.VERSION_19
 
 configurations {
     testImplementation { exclude(group = "org.junit.vintage") }
@@ -56,7 +56,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "16"
+        jvmTarget = "19"
     }
 }
 
