@@ -7,14 +7,14 @@ plugins {
     kotlin("plugin.spring") version "1.7.21"
     kotlin("plugin.jpa") version "1.8.10"
     // For classes such as JPA, makes non-final (kotlin final by default)
-    kotlin("plugin.allopen") version "1.7.21"
+    kotlin("plugin.allopen") version "1.8.10"
 
     kotlin("kapt") version "1.8.10"
 }
 
 group = "org.lucidant"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_16
+java.sourceCompatibility = JavaVersion.VERSION_19
 
 configurations {
     testImplementation { exclude(group = "org.junit.vintage") }
@@ -56,7 +56,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "16"
+        jvmTarget = "19"
     }
 }
 
