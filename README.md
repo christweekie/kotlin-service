@@ -1,7 +1,11 @@
 # kotlin-service
 
+Purpose of the project is to store Kotlin language experiments, features, etc. There's a spring boot app in here but we aren't trying to show that, or database, or other frameworks. 
+
+The project is for the language, not frameworks/ tools etc.
+
 ## Requirements 
-Java 16
+Java 19
 
 ## How to run
 `./gradlew bootRun`
