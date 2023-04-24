@@ -39,7 +39,7 @@ dependencies {
 
     // OpenAPI with nice swagger UI
     implementation("io.springfox:springfox-swagger2:3.0.0")
-    runtimeOnly("org.springdoc:springdoc-openapi-ui:1.6.15")
+    runtimeOnly("org.springdoc:springdoc-openapi-ui:1.7.0")
     runtimeOnly("io.springfox:springfox-swagger-ui:3.0.0")
 
 
