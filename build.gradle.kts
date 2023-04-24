@@ -10,7 +10,7 @@ plugins {
     kotlin("plugin.allopen") version "1.8.20"
 
     // Enables Java annotation processors
-    kotlin("kapt") version "1.8.10"
+    kotlin("kapt") version "1.8.20"
 }
 
 group = "org.lucidant"
