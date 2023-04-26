@@ -7,7 +7,7 @@ plugins {
     kotlin("plugin.spring") version "1.8.20"
     kotlin("plugin.jpa") version "1.8.20"
     // For classes such as JPA, makes non-final (kotlin final by default)
-    kotlin("plugin.allopen") version "1.8.20"
+    kotlin("plugin.allopen") version "1.8.21"
 
     // Enables Java annotation processors
     kotlin("kapt") version "1.8.20"
