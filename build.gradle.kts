@@ -4,7 +4,7 @@ plugins {
     id("org.springframework.boot") version "3.1.3"
     id("io.spring.dependency-management") version "1.1.0"
     kotlin("jvm") version "1.8.22"
-    kotlin("plugin.spring") version "1.8.21"
+    kotlin("plugin.spring") version "1.9.10"
     kotlin("plugin.jpa") version "1.8.22"
     // For classes such as JPA, makes non-final (kotlin final by default)
     kotlin("plugin.allopen") version "1.8.22"
